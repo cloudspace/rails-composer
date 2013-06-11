@@ -180,17 +180,17 @@ else
 end
 
 # this application template only supports Rails version 3.1 and newer
-case Rails::VERSION::MAJOR.to_s
-when "3"
-  case Rails::VERSION::MINOR.to_s
-  when "0"
-    say_wizard "You are using Rails version #{Rails::VERSION::STRING} which is not supported. Try 3.1 or newer."
-    raise StandardError.new "Rails #{Rails::VERSION::STRING} is not supported. Try 3.1 or newer."
-  end
-else
-  say_wizard "You are using Rails version #{Rails::VERSION::STRING} which is not supported. Try 3.1 or newer."
-  raise StandardError.new "Rails #{Rails::VERSION::STRING} is not supported. Try 3.1 or newer."
-end
+#case Rails::VERSION::MAJOR.to_s
+#when "3"
+#  case Rails::VERSION::MINOR.to_s
+#  when "0"
+#    say_wizard "You are using Rails version #{Rails::VERSION::STRING} which is not supported. Try 3.1 or newer."
+#    raise StandardError.new "Rails #{Rails::VERSION::STRING} is not supported. Try 3.1 or newer."
+#  end
+#else
+#  say_wizard "You are using Rails version #{Rails::VERSION::STRING} which is not supported. Try 3.1 or newer."
+#  raise StandardError.new "Rails #{Rails::VERSION::STRING} is not supported. Try 3.1 or newer."
+#end
 
 say_wizard "Using rails_apps_composer recipes to generate an application."
 
